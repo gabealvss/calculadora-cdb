@@ -1,0 +1,15 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model trades {
+  id              Int      @id @default(autoincrement())
+  ssecurityname   String   @db.VarChar(30)
+  dtdate          String?  @db.VarChar(30)
+  dlasttradeprice Decimal? @db.Decimal(5, 2)
+}
