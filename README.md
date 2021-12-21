@@ -75,7 +75,7 @@ A API também busca utilizar o uso correto dos verbos HTTP para cada endpoint:
 ## <a name="endpoints"></a>Endpoints
 Para testar os Endpoints você deve executar a aplicação na sua máquina utilizando o comando `start` / `dev` ou utilizar a aplicação de testes em produção no Heroku.
 
-Para um melhor controle de versionamento, todas as requisições devem ser feitas partindo do diretório `/api/v1/`. Ex.: `POST http://localhost:5000/api/v1/user`
+Para um melhor controle de versionamento, todas as requisições devem ser feitas partindo do diretório `/api/v1/`. Ex.: `GET http://localhost:5000/api/v1/calculator`
 
 Caso queira realizar os testes utilizando aplicações HTTP como o Insomnia, existe um arquivo no diretório raiz chamado `insomnia.json`, basta importa-lo na aplicação para ter acesso a um mock de todas as requests e endpoints da API.
 
